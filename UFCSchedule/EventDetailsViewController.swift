@@ -25,8 +25,10 @@ class EventDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
         self.stackView.setCustomSpacing(50.0, after: self.fightScheduleTextView)
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"background_light")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"background_reebok")!)
         
         DispatchQueue.global(qos: .background).async {
             
